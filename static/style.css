@@ -1,0 +1,131 @@
+body {
+
+    background: #1e1e1e;
+    color: white;
+
+    font-family: Arial;
+
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    margin-top: 20px;
+}
+
+h1 {
+
+    margin-bottom: 20px;
+
+    color: #00ffcc;
+}
+
+.top-panel {
+
+    margin-bottom: 20px;
+}
+
+.top-panel button {
+
+    padding: 12px 18px;
+
+    margin: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #00b894;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.top-panel button:hover {
+
+    background: #019875;
+}
+
+#timer {
+
+    font-size: 20px;
+
+    margin-left: 15px;
+
+    color: #ffeaa7;
+}
+
+#board {
+
+    display: grid;
+
+    grid-template-columns: repeat(8, 60px);
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+.cell {
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #444;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cell:hover {
+
+    background: #666;
+
+    transform: scale(1.05);
+}
+
+.revealed {
+
+    background: #dfe6e9;
+
+    color: black;
+}
+
+.flag {
+
+    background: orange;
+}
+
+.mine {
+
+    background: red;
+}
+
+#status {
+
+    margin-top: 20px;
+
+    font-size: 28px;
+
+    color: red;
+}

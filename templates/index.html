@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Advanced Minesweeper</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Advanced Minesweeper</h1>
+
+        <div class="top-panel">
+
+            <button onclick="restartGame()">
+                Restart
+            </button>
+
+            <button onclick="getHint()">
+                Hint
+            </button>
+
+            <span id="timer">
+                Time: 0s
+            </span>
+
+        </div>
+
+        <div id="board"></div>
+
+        <h2 id="status"></h2>
+
+    </div>
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+
+</html>

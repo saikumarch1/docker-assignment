@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+
+  minesweeper:
+
+    build: .
+
+    container_name: minesweeper-game
+
+    ports:
+      - "5000:5000"
